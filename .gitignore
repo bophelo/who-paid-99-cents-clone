@@ -1,7 +1,2 @@
 **/node_modules
-**/public/app.css
-package.json
-package-lock.json
-postcss.config.js
-tailwind.config.js
 **/vendor

@@ -1,7 +1,5 @@
-**/app
 **/node_modules
 **/public/app.css
-**/resources
 package.json
 package-lock.json
 postcss.config.js

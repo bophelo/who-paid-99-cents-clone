@@ -11,9 +11,9 @@ require_once __DIR__ . '/../vendor/autoload.php';
 AppFactory::setContainer($container = new Container());
 
 // Set view in Container
-/*$container->set('view', function () {
+$container->set('view', function () {
     return Twig::create(__DIR__ . '/../resources/views', ['cache' => false]);
-});*/
+});
 
 /*$container->set('stripe', function () {
     return 'Stripe';
@@ -22,6 +22,6 @@ AppFactory::setContainer($container = new Container());
 //dump( new HomeController());
 
 $app = AppFactory::create();
-//$app->add(TwigMiddleware::createFromContainer($app));
+$app->add(TwigMiddleware::createFromContainer($app));
 
 require_once __DIR__ . '/../routes/web.php';

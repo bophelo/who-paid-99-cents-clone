@@ -25,3 +25,5 @@ $app = AppFactory::create();
 $app->add(TwigMiddleware::createFromContainer($app));
 
 require_once __DIR__ . '/../routes/web.php';
+
+require_once __DIR__ . '/database.php';

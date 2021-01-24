@@ -9,15 +9,26 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
         '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
-        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
+        'b33e3d135e5d9e47d845c576147bda89' => __DIR__ . '/..' . '/php-di/php-di/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'voku\\' => 5,
+        ),
         'T' => 
         array (
             'Twig\\' => 5,
@@ -25,15 +36,25 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
+            'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Translation\\' => 30,
+            'Symfony\\Contracts\\Service\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+            'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\String\\' => 25,
+            'Symfony\\Component\\Finder\\' => 25,
+            'Symfony\\Component\\Console\\' => 26,
             'Slim\\Views\\' => 11,
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
         ),
         'P' => 
         array (
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
@@ -47,6 +68,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         'I' => 
         array (
             'Invoker\\' => 8,
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Database\\' => 20,
+            'Illuminate\\Contracts\\' => 21,
+            'Illuminate\\Container\\' => 21,
         ),
         'F' => 
         array (
@@ -55,7 +80,12 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         ),
         'D' => 
         array (
+            'Doctrine\\Inflector\\' => 19,
             'DI\\' => 3,
+        ),
+        'C' => 
+        array (
+            'Carbon\\' => 7,
         ),
         'A' => 
         array (
@@ -64,6 +94,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
     );
 
     public static $prefixDirsPsr4 = array (
+        'voku\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
@@ -72,17 +106,53 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
+        'Symfony\\Polyfill\\Php73\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php73',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
+        ),
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Contracts\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
+        ),
+        'Symfony\\Contracts\\Service\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/service-contracts',
+        ),
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Symfony\\Component\\Translation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Symfony\\Component\\String\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/string',
+        ),
+        'Symfony\\Component\\Finder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/finder',
+        ),
+        'Symfony\\Component\\Console\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
         ),
         'Slim\\Views\\' => 
         array (
@@ -95,6 +165,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         'Slim\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (
@@ -126,6 +200,24 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         array (
             0 => __DIR__ . '/..' . '/php-di/invoker/src',
         ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/collections',
+            1 => __DIR__ . '/..' . '/illuminate/macroable',
+            2 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/database',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+        'Illuminate\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
         'Fig\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
@@ -134,9 +226,17 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'Doctrine\\Inflector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
+        ),
         'DI\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/php-di/src',
+        ),
+        'Carbon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
         'App\\' => 
         array (
@@ -146,7 +246,82 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
 
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Comparator\\ColumnComparator' => __DIR__ . '/..' . '/lulco/phoenix/src/Comparator/ColumnComparator.php',
+        'Comparator\\SettingsComparator' => __DIR__ . '/..' . '/lulco/phoenix/src/Comparator/SettingsComparator.php',
+        'Comparator\\StructureComparator' => __DIR__ . '/..' . '/lulco/phoenix/src/Comparator/StructureComparator.php',
+        'Comparator\\TableComparator' => __DIR__ . '/..' . '/lulco/phoenix/src/Comparator/TableComparator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Dumper\\Dumper' => __DIR__ . '/..' . '/lulco/phoenix/src/Dumper/Dumper.php',
+        'Dumper\\Indenter' => __DIR__ . '/..' . '/lulco/phoenix/src/Dumper/Indenter.php',
+        'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'Phoenix\\Behavior\\ParamsCheckerBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Behavior/ParamsCheckerBehavior.php',
+        'Phoenix\\Command\\AbstractCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/AbstractCommand.php',
+        'Phoenix\\Command\\AbstractDumpCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/AbstractDumpCommand.php',
+        'Phoenix\\Command\\AbstractRunCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/AbstractRunCommand.php',
+        'Phoenix\\Command\\CleanupCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/CleanupCommand.php',
+        'Phoenix\\Command\\CreateCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/CreateCommand.php',
+        'Phoenix\\Command\\DiffCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/DiffCommand.php',
+        'Phoenix\\Command\\DumpCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/DumpCommand.php',
+        'Phoenix\\Command\\InitCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/InitCommand.php',
+        'Phoenix\\Command\\MigrateCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/MigrateCommand.php',
+        'Phoenix\\Command\\RollbackCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/RollbackCommand.php',
+        'Phoenix\\Command\\StatusCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/StatusCommand.php',
+        'Phoenix\\Command\\TestCommand' => __DIR__ . '/..' . '/lulco/phoenix/src/Command/TestCommand.php',
+        'Phoenix\\Config\\Config' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Config.php',
+        'Phoenix\\Config\\EnvironmentConfig' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/EnvironmentConfig.php',
+        'Phoenix\\Config\\Parser\\ConfigParserFactory' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Parser/ConfigParserFactory.php',
+        'Phoenix\\Config\\Parser\\ConfigParserInterface' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Parser/ConfigParserInterface.php',
+        'Phoenix\\Config\\Parser\\JsonConfigParser' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Parser/JsonConfigParser.php',
+        'Phoenix\\Config\\Parser\\NeonConfigParser' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Parser/NeonConfigParser.php',
+        'Phoenix\\Config\\Parser\\PhpConfigParser' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Parser/PhpConfigParser.php',
+        'Phoenix\\Config\\Parser\\YamlConfigParser' => __DIR__ . '/..' . '/lulco/phoenix/src/Config/Parser/YamlConfigParser.php',
+        'Phoenix\\Database\\Adapter\\AdapterFactory' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Adapter/AdapterFactory.php',
+        'Phoenix\\Database\\Adapter\\AdapterInterface' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Adapter/AdapterInterface.php',
+        'Phoenix\\Database\\Adapter\\Behavior\\StructureBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Adapter/Behavior/StructureBehavior.php',
+        'Phoenix\\Database\\Adapter\\MysqlAdapter' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Adapter/MysqlAdapter.php',
+        'Phoenix\\Database\\Adapter\\PdoAdapter' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Adapter/PdoAdapter.php',
+        'Phoenix\\Database\\Adapter\\PgsqlAdapter' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Adapter/PgsqlAdapter.php',
+        'Phoenix\\Database\\Element\\Behavior\\AutoIncrementBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/AutoIncrementBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\CharsetAndCollationBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/CharsetAndCollationBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\ColumnsToChangeBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/ColumnsToChangeBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\ColumnsToDropBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/ColumnsToDropBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\ColumnsToRenameBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/ColumnsToRenameBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\CommentBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/CommentBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\CopyTableBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/CopyTableBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\DropPrimaryKeyBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/DropPrimaryKeyBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\ForeignKeyBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/ForeignKeyBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\IndexBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/IndexBehavior.php',
+        'Phoenix\\Database\\Element\\Behavior\\PrimaryColumnsBehavior' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Behavior/PrimaryColumnsBehavior.php',
+        'Phoenix\\Database\\Element\\Column' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Column.php',
+        'Phoenix\\Database\\Element\\ColumnSettings' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/ColumnSettings.php',
+        'Phoenix\\Database\\Element\\ForeignKey' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/ForeignKey.php',
+        'Phoenix\\Database\\Element\\Index' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Index.php',
+        'Phoenix\\Database\\Element\\IndexColumn' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/IndexColumn.php',
+        'Phoenix\\Database\\Element\\IndexColumnSettings' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/IndexColumnSettings.php',
+        'Phoenix\\Database\\Element\\MigrationTable' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/MigrationTable.php',
+        'Phoenix\\Database\\Element\\Structure' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Structure.php',
+        'Phoenix\\Database\\Element\\Table' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/Element/Table.php',
+        'Phoenix\\Database\\QueryBuilder\\CommonQueryBuilder' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/QueryBuilder/CommonQueryBuilder.php',
+        'Phoenix\\Database\\QueryBuilder\\MysqlQueryBuilder' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/QueryBuilder/MysqlQueryBuilder.php',
+        'Phoenix\\Database\\QueryBuilder\\MysqlWithJsonQueryBuilder' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/QueryBuilder/MysqlWithJsonQueryBuilder.php',
+        'Phoenix\\Database\\QueryBuilder\\PgsqlQueryBuilder' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/QueryBuilder/PgsqlQueryBuilder.php',
+        'Phoenix\\Database\\QueryBuilder\\QueryBuilderInterface' => __DIR__ . '/..' . '/lulco/phoenix/src/Database/QueryBuilder/QueryBuilderInterface.php',
+        'Phoenix\\Exception\\ConfigException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/ConfigException.php',
+        'Phoenix\\Exception\\DatabaseQueryExecuteException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/DatabaseQueryExecuteException.php',
+        'Phoenix\\Exception\\IncorrectMethodUsageException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/IncorrectMethodUsageException.php',
+        'Phoenix\\Exception\\InvalidArgumentValueException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/InvalidArgumentValueException.php',
+        'Phoenix\\Exception\\PhoenixException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/PhoenixException.php',
+        'Phoenix\\Exception\\StructureException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/StructureException.php',
+        'Phoenix\\Exception\\WrongCommandException' => __DIR__ . '/..' . '/lulco/phoenix/src/Exception/WrongCommandException.php',
+        'Phoenix\\Migration\\AbstractMigration' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/AbstractMigration.php',
+        'Phoenix\\Migration\\ClassNameCreator' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/ClassNameCreator.php',
+        'Phoenix\\Migration\\FilesFinder' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/FilesFinder.php',
+        'Phoenix\\Migration\\Init\\Init' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/Init/0_init.php',
+        'Phoenix\\Migration\\Manager' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/Manager.php',
+        'Phoenix\\Migration\\MigrationCreator' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/MigrationCreator.php',
+        'Phoenix\\Migration\\MigrationNameCreator' => __DIR__ . '/..' . '/lulco/phoenix/src/Migration/MigrationNameCreator.php',
+        'Phoenix\\Templates\\TemplateManager' => __DIR__ . '/..' . '/lulco/phoenix/src/Templates/TemplateManager.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',

@@ -10,7 +10,6 @@ class PaymentsMigration extends AbstractMigration
     protected function up(): void
     {
         $this->table('payments')
-            ->addColumn('id', 'integer')
             ->addColumn('name', 'string')
             ->addColumn('email', 'string')
             ->addColumn('token', 'string')
@@ -34,7 +33,7 @@ class PaymentsMigration extends AbstractMigration
 
     protected function down(): void
     {   
-        $this->table('payments_table')
+        $this->table('payments')
             ->drop();
     }
 }

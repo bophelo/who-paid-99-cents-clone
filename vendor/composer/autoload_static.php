@@ -48,6 +48,7 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
             'Symfony\\Component\\String\\' => 25,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Console\\' => 26,
+            'Stripe\\' => 7,
             'Slim\\Views\\' => 11,
             'Slim\\Psr7\\' => 10,
             'Slim\\' => 5,
@@ -153,6 +154,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         'Symfony\\Component\\Console\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
         'Slim\\Views\\' => 
         array (

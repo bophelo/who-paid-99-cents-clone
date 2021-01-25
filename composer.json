@@ -6,7 +6,8 @@
     "symfony/var-dumper": "^5.2",
     "slim/twig-view": "3.0",
     "illuminate/database": "^8.24",
-    "lulco/phoenix": "^1.4"
+    "lulco/phoenix": "^1.4",
+    "stripe/stripe-php": "^7.69"
   },
   "autoload": {
     "psr-4": {

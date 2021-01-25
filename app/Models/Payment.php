@@ -10,6 +10,6 @@ class Payment extends Model
         'name',
         'email',
         'token',
-        'payfast_id',
+        'stripe_id',
     ];
 }

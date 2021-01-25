@@ -13,7 +13,7 @@ class PaymentsMigration extends AbstractMigration
             ->addColumn('name', 'string')
             ->addColumn('email', 'string')
             ->addColumn('token', 'string')
-            ->addColumn('payfast_id', 'string')
+            ->addColumn('stripe_id', 'string')
             ->addColumn('created_at', 'datetime')
             ->addColumn('updated_at', 'datetime')
             ->create();

@@ -20,7 +20,7 @@ class PaymentsController extends Controller {
             'name' => $name,
             'email' => $email,
             'token' => $token = bin2hex(random_bytes(32)),
-            'payfast_id' => 'abc',
+            'stripe_id' => 'abc',
         ]);
         
         return $response->withHeader('Location', '/payments?token=' .$token);

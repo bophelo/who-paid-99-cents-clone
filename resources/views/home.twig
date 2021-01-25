@@ -6,25 +6,33 @@
   UI Design Prototype
   Link : https://dribbble.com/shots/10452538-React-UI-Components
 -->
-<form action="/payments" method="post" class="py-6 flex flex-col justify-center py-12 md:py-3">
+<form action="/payments" method="post" class="py-6 flex flex-col justify-center py-12 md:py-3" id="cardForm">
   <div class="relative py-3 sm:max-w-xl sm:mx-auto">
-    <div class="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
+    <div class="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow border-2 border-gray-300 rounded-3xl sm:p-10">
       <div class="max-w-md mx-auto">
         <div class="flex items-center space-x-5">
           <div class="h-14 w-14 bg-blue-300 rounded-full flex flex-shrink-0 justify-center items-center text-white text-2xl font-mono">i</div>
           <div class="block pl-2 font-semibold text-xl self-start text-gray-700">
-            <p class="text-sm text-gray-500 font-normal leading-relaxed">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-sm text-gray-500 font-normal leading-relaxed">Please do not use any real information. This is a simple demo, meant to collect dummy data.</p>
           </div>
         </div>
-        <div class="divide-y divide-gray-200">
+        <div class="">
           <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
             <div class="flex flex-col">
               <label class="leading-loose">Your Name</label>
-              <input type="text" name="name" class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Your Name" required>
+              <input type="text" name="name" class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 focus:outline-none text-gray-600" placeholder="Your Name" required>
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Email</label>
-              <input type="email" name="email" class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Email" required>
+              <input type="email" name="email" class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 focus:outline-none text-gray-600" placeholder="Email" required>
+            </div>
+            <div class="flex flex-col">
+              <label class="leading-loose" for="card">Card Details</label>
+              <div class="bg-blue-100 p-6 rounded-xl">
+                <div id="card">
+
+                </div>
+              </div>
             </div>
           </div>
           <div class="pt-4 flex items-center space-x-4">
@@ -38,4 +46,29 @@
     </div>
   </div>
 </form>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+
+        let stripe = Stripe('pk_test_51IDSXiCZy8IvjitoNMkD1iDuLF7k74VK9r7oGDcboZJ93dadtOhOW3sAHjJf3oRjx7s3a9atzSrIqOWSMPYO18pG00sWKKL9W8');
+
+        const elements = stripe.elements();
+
+        const cardElement = elements.create('card', {
+            style: {
+                base: {
+                    fontSize: '16px'
+                }
+            }
+        });
+
+        const cardForm = document.getElementById('cardForm')
+
+        cardElement.mount('#card');
+
+        cardForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+        });
+    </script>
 {% endblock %}

@@ -31167,6 +31167,102 @@ video {
           animation: bounce 1s infinite;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.card {
+  border-radius: 14px;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  padding: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 99;
+}
+
+.logo-card {
+  max-width: 50px;
+  margin-bottom: 15px;
+  margin-top: -19px;
+}
+
+label {
+  display: flex;
+  font-size: 14px;
+}
+
+input {
+  font-family: "Work Sans", sans-serif;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.4s;
+}
+
+input:focus {
+  border-bottom: 1px solid #1abc9c;
+  outline: none;
+}
+
+.cardnumber {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.name {
+  display: block;
+  font-size: 15px;
+  max-width: 200px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.toleft {
+  float: left;
+}
+
+.ccv {
+  width: 50px;
+  font-size: 15px;
+}
+
+.proceed {
+  position: absolute;
+  transform: translate(300px, 10px);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #1abc9c;
+  border: none;
+  transition: box-shadow 0.2s, transform 0.4s;
+  cursor: pointer;
+}
+
+.proceed:active {
+  outline: none;
+}
+
+.proceed:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 5px white;
+}
+
+.sendicon {
+  filter: invert(100%);
+  padding-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .proceed {
+    transform: translate(250px, 10px);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

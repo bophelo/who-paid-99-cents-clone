@@ -1,6 +1,10 @@
 {% extends "layouts/app.twig" %}
 
 {% block content %}
+
+{% if messages.status %}
+  {% include "partials/message.twig" with { 'message': messages.status | first } %}
+{% endif %}
 <!-- alert component -->
 <!--
   UI Design Prototype

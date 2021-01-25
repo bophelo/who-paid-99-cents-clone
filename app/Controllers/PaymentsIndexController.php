@@ -27,7 +27,8 @@ class PaymentsIndexController extends Controller {
         $payments = Payment::latest()->get();
 
         return $this->container->get('view')->render($response, 'payments.twig', [
-            'payments' => $payments
+            'payments' => $payments,
+            'messages' => $this->container->get('flash')->getMessages()
         ]);
     }
 }

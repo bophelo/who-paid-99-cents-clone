@@ -13,6 +13,7 @@ use App\Views\EnvExtension;
 use Slim\Factory\AppFactory;
 use Slim\Views\TwigMiddleware;
 use App\Controllers\HomeController;
+use Twig\Extension\DebugExtension;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -23,10 +24,16 @@ AppFactory::setContainer($container = new Container());
 
 // Set view in Container
 $container->set('view', function () {
-    $twig = Twig::create(__DIR__ . '/../resources/views', ['cache' => false]);
+    $twig = Twig::create(__DIR__ . '/../resources/views', [
+        'cache' => false,
+        'debug' => $_ENV['APP_ENV'] === 'local',
+    ]);
 
     //Enable Whatever you like here even add extensions
     $twig->addExtension(new EnvExtension());
+    if($_ENV['APP_ENV'] === 'local'){
+        $twig->addExtension(new DebugExtension());
+    }
 
     return $twig;
 });

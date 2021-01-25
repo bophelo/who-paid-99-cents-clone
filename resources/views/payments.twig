@@ -3,6 +3,7 @@
 {% block content %}
 
 <h2 class="font-bold text-xl text-gray-800 my-6 text-center">{{ payments.count() }} people paid 99 cents</h2>
+
 <ul class="flex flex-col p-4">
     {% for payment in payments %}
     <li class="border-2 border-gray-400 flex flex-row mb-2">

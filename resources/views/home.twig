@@ -19,12 +19,12 @@
         <div class="">
           <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
             <div class="flex flex-col">
-              <label class="leading-loose">Your Name</label>
-              <input type="text" name="name" class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 focus:outline-none text-gray-600" placeholder="Your Name" required>
+              <label class="leading-loose" for="name">Your Name</label>
+              <input type="text" name="name" id="card-name" class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 focus:outline-none text-gray-600" placeholder="Your Name" required>
             </div>
             <div class="flex flex-col">
-              <label class="leading-loose">Email</label>
-              <input type="email" name="email" class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 focus:outline-none text-gray-600" placeholder="Email" required>
+              <label class="leading-loose" for="email">Email</label>
+              <input type="email" name="email" id="card-email" class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 focus:outline-none text-gray-600" placeholder="Email" required>
             </div>
             <div class="flex flex-col">
               <label class="leading-loose" for="card">Card Details</label>
@@ -65,10 +65,41 @@
 
         const cardForm = document.getElementById('cardForm')
 
+        const cardName = document.getElementById('card-name')
+
+        const cardEmail = document.getElementById('card-email')
+
         cardElement.mount('#card');
 
-        cardForm.addEventListener('submit', (e) => {
+        cardForm.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            const { paymentMethod, error } = await stripe.createPaymentMethod({
+                type: 'card',
+                card: cardElement,
+                billing_details :{
+                    name: cardName.value,
+                    email: cardEmail.value,
+                },
+            });
+
+            //error hanlding
+            if(error){
+                console.log(error);
+            } else {
+                //console.log(paymentMethod);
+                let input = document.createElement('input');
+
+                input.setAttribute('type','hidden');
+                input.setAttribute('name', 'payment_method');
+                input.setAttribute('value', paymentMethod.id);
+
+                cardForm.appendChild(input);
+
+                cardForm.submit();
+            }
+
+            //console.log(paymentMethod);
         });
     </script>
 {% endblock %}

@@ -14,8 +14,11 @@ class PaymentsController extends Controller {
     {
         //dump(Payment::get());
         //dump($request->getParsedBody());
-        ['name' => $name, 'email' => $email] = $request->getParsedBody();
+        ['name' => $name, 'email' => $email, 'payment_method' => $paymentMethod] = $request->getParsedBody();
 
+        //dump($paymentMethod);
+        //die();
+        
         Payment::create([
             'name' => $name,
             'email' => $email,

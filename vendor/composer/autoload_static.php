@@ -51,6 +51,7 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
             'Stripe\\' => 7,
             'Slim\\Views\\' => 11,
             'Slim\\Psr7\\' => 10,
+            'Slim\\Flash\\' => 11,
             'Slim\\' => 5,
         ),
         'P' => 
@@ -166,6 +167,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         'Slim\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/psr7/src',
+        ),
+        'Slim\\Flash\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/flash/src',
         ),
         'Slim\\' => 
         array (

@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5a2a99a27730c2d0ec2023197a5a5a2e2757d712',
+    'reference' => '92074db97e8cf5dcdde9f709414d1084dfff64a0',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5a2a99a27730c2d0ec2023197a5a5a2e2757d712',
+      'reference' => '92074db97e8cf5dcdde9f709414d1084dfff64a0',
     ),
     'doctrine/inflector' => 
     array (
@@ -268,6 +268,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '120b605dfeb996808c31b6477290a714d356e822',
+    ),
+    'slim/flash' => 
+    array (
+      'pretty_version' => '0.4.0',
+      'version' => '0.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9aaff5fded3b54f4e519ec3d4ac74d3d1f2cbbbc',
     ),
     'slim/psr7' => 
     array (

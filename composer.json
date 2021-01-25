@@ -7,7 +7,8 @@
     "slim/twig-view": "3.0",
     "illuminate/database": "^8.24",
     "lulco/phoenix": "^1.4",
-    "stripe/stripe-php": "^7.69"
+    "stripe/stripe-php": "^7.69",
+    "slim/flash": "^0.4.0"
   },
   "autoload": {
     "psr-4": {

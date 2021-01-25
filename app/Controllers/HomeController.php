@@ -13,6 +13,8 @@ class HomeController extends Controller {
     public function __invoke(Request $request, Response $response)
     {
         //dump(Payment::get());
-        return $this->container->get('view')->render($response, 'home.twig');
+        return $this->container->get('view')->render($response, 'home.twig', [
+            'messages' => $this->container->get('flash')->getMessages()
+        ]);
     }
 }

@@ -11,6 +11,18 @@
         <div class="container mx-auto px-6">
             <div class="max-w-lg mx-auto my-12 md:my-24">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-center upprecase my-2 bg-gradient-to-r from-red-300 to-blue-400 bg-clip-text text-transparent transform -rotate-2">Who Paid 99c?</h1>
+                {% if messages.status %}
+                    <div class="alert flex flex-row items-center bg-red-200 p-5 rounded border-b-2 border-red-300">
+                        <div class="alert-content ml-4">
+                            <div class="alert-title font-semibold text-lg text-red-800">
+                                Error
+                            </div>
+                            <div class="alert-description text-sm text-red-600">
+                                {{ messages.status | first }}
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
                 <div class="pt-4 flex items-center space-x-4">
                     <button @click="see = true" class="bg-red-300 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">See 👀</button>
                 </div>

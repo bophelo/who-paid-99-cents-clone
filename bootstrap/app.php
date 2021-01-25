@@ -1,7 +1,11 @@
 <?php
 
+// Start PHP session
+session_start();
+
 use DI\Container;
 use Slim\Views\Twig;
+use Slim\Flash\Messages;
 use Stripe\StripeClient;
 use Slim\Factory\AppFactory;
 use Slim\Views\TwigMiddleware;
@@ -18,6 +22,10 @@ $container->set('view', function () {
 
 $container->set('stripe', function () {
     return new StripeClient('sk_test_51IDSXiCZy8Ivjitoz1nLkwrVCkjTrsEMPhQn7lCM9OLNRVaLJfzhy8gaG9z9CCxBfssOVwkCm35FDE8EfMByqirn00FGtncbWo');
+});
+
+$container->set('flash', function () {
+    return new Messages();
 });
 
 //dump( new HomeController());

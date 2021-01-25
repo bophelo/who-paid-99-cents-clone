@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '92074db97e8cf5dcdde9f709414d1084dfff64a0',
+    'reference' => 'efeef3a6a03671a89475c9a0f75b2b71f4be6afc',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '92074db97e8cf5dcdde9f709414d1084dfff64a0',
+      'reference' => 'efeef3a6a03671a89475c9a0f75b2b71f4be6afc',
     ),
     'doctrine/inflector' => 
     array (
@@ -37,6 +37,15 @@
       array (
       ),
       'reference' => '9d94dc0154230ac39e5bf89398b324a86f63f765',
+    ),
+    'graham-campbell/result-type' => 
+    array (
+      'pretty_version' => 'v1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7e279d2cd5d7fbb156ce46daada972355cea27bb',
     ),
     'illuminate/collections' => 
     array (
@@ -154,6 +163,15 @@
       array (
       ),
       'reference' => '66daff34cbd2627740ffec9469ffbac9f8c8185c',
+    ),
+    'phpoption/phpoption' => 
+    array (
+      'pretty_version' => '1.7.5',
+      'version' => '1.7.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '994ecccd8f3283ecf5ac33254543eb0ac946d525',
     ),
     'psr/container' => 
     array (
@@ -433,6 +451,15 @@
       array (
       ),
       'reference' => 'f795ca686d38530045859b0350b5352f7d63447d',
+    ),
+    'vlucas/phpdotenv' => 
+    array (
+      'pretty_version' => 'v5.3.0',
+      'version' => '5.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b3eac5c7ac896e52deab4a99068e3f4ab12d9e56',
     ),
     'voku/portable-ascii' => 
     array (

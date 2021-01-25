@@ -61,6 +61,7 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+            'PhpOption\\' => 10,
             'PhpDocReader\\' => 13,
         ),
         'O' => 
@@ -75,6 +76,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
         ),
+        'G' => 
+        array (
+            'GrahamCampbell\\ResultType\\' => 26,
+        ),
         'F' => 
         array (
             'Fig\\Http\\Message\\' => 17,
@@ -82,6 +87,7 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         ),
         'D' => 
         array (
+            'Dotenv\\' => 7,
             'Doctrine\\Inflector\\' => 19,
             'DI\\' => 3,
         ),
@@ -198,6 +204,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'PhpDocReader\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
@@ -228,6 +238,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
         ),
+        'GrahamCampbell\\ResultType\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
         'Fig\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/fig/http-message-util/src',
@@ -235,6 +249,10 @@ class ComposerStaticInitdd8ed7b924bbdf903390d1f349fdef2b
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'Doctrine\\Inflector\\' => 
         array (

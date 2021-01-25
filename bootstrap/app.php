@@ -4,6 +4,7 @@
 session_start();
 
 use DI\Container;
+use Dotenv\Dotenv;
 use Slim\Views\Twig;
 use Slim\Flash\Messages;
 use Stripe\StripeClient;
@@ -13,6 +14,9 @@ use App\Controllers\HomeController;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
 AppFactory::setContainer($container = new Container());
 
 // Set view in Container
@@ -21,7 +25,7 @@ $container->set('view', function () {
 });
 
 $container->set('stripe', function () {
-    return new StripeClient('sk_test_51IDSXiCZy8Ivjitoz1nLkwrVCkjTrsEMPhQn7lCM9OLNRVaLJfzhy8gaG9z9CCxBfssOVwkCm35FDE8EfMByqirn00FGtncbWo');
+    return new StripeClient($_ENV['STRIPE_SECRET']);
 });
 
 $container->set('flash', function () {

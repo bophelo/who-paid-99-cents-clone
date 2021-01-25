@@ -1,6 +1,7 @@
 {% extends "layouts/app.twig" %}
 
 {% block content %}
+
 <!-- alert component -->
 <!--
   UI Design Prototype
@@ -51,7 +52,7 @@
 {% block scripts %}
     <script>
 
-        let stripe = Stripe('pk_test_51IDSXiCZy8IvjitoNMkD1iDuLF7k74VK9r7oGDcboZJ93dadtOhOW3sAHjJf3oRjx7s3a9atzSrIqOWSMPYO18pG00sWKKL9W8');
+        let stripe = Stripe('{{ env("STRIPE_KEY") }}');
 
         const elements = stripe.elements();
 

@@ -8,6 +8,8 @@ use Dotenv\Dotenv;
 use Slim\Views\Twig;
 use Slim\Flash\Messages;
 use Stripe\StripeClient;
+
+use App\Views\EnvExtension;
 use Slim\Factory\AppFactory;
 use Slim\Views\TwigMiddleware;
 use App\Controllers\HomeController;
@@ -21,7 +23,12 @@ AppFactory::setContainer($container = new Container());
 
 // Set view in Container
 $container->set('view', function () {
-    return Twig::create(__DIR__ . '/../resources/views', ['cache' => false]);
+    $twig = Twig::create(__DIR__ . '/../resources/views', ['cache' => false]);
+
+    //Enable Whatever you like here even add extensions
+    $twig->addExtension(new EnvExtension());
+
+    return $twig;
 });
 
 $container->set('stripe', function () {
